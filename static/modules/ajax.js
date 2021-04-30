@@ -318,15 +318,6 @@ class Ajax {
 
                     let move = dys.data.move;
 
-                    let index = 0;
-                    while (!dys.data[dys.playerOrder[index]]) {
-                        index++;
-                        if (index > 3)
-                            index = 0;
-
-                    }
-                    console.log(dys.playerOrder[index] + " " + index)
-                    return;
 
                     for (let i = 0; i < dys.playerOrder.length; i++) {
                         if (dys.data[dys.playerOrder[i]]) {
